@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'creato';
+    src: url('CreatoDisplay-Bold.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'nasa21';
+    src: url('Nasa21.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'nasa';
+    src: url('nasalization-rg.otf') format('opentype');
+  }
+:root{
+    --fontepadrao: 'creato';
+    --fontedestaque: 'nasa';
+    --fontenormal: 'nasa21';
+  }
+body{
+    min-height: 100vh;
+    background-image: url('imagens/espaco.jpeg');
+    background-color: black;
+    background-attachment: scroll;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center; 
+}
+
+header{
+    background-image: linear-gradient( to top,#1183f582, white ); 
+    margin: auto;
+    min-width: 375px;
+    max-width: 860px;
+    padding: 1.5%;
+   
+  }
+   h1{
+      
+      position: absolute;
+      text-align: right;
+      float: right;
+      left:  30%;
+      color: white;
+      font-family: var(--fontedestaque);
+      font-size: 2.2em;
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.56);
+      font-weight: normal;
+      padding: 20px;
+      margin: 30px;
+    
+}
+
+nav > a{
+  color: white;
+  text-decoration: none;
+  padding: 1%;
+  font-weight: bold;
+  transition-duration: 0.5s;
+  font-family: var(--fontepadrao);
+  font-size: 20px;
+}
+nav > a:hover {
+  background-color: #3a8ac7 ;
+  color:#041E38;
+  border-radius: 5px;
+}
+div.main{
+  min-width: 375px;
+  max-width: 903px;
+  margin: auto;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.644);
+  box-shadow: 5px 5px 10px #0f372a9b;
+  line-height: 1.5em;
+}
+section{
+  padding-top: 2vh ;
+  padding-bottom: 2vh;
+  line-height: 2em;
+  padding-left: 30px;
+  font-family: var(--fontenormal);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+section.normal{
+  
+  color: black;
+}
+section.imagem{
+  background-color: rgba(39, 38, 38, 0.315);
+  color: white;
+  padding-top: 15vh ;
+  padding-bottom: 15vh;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.582);
+  background-attachment: fixed;
+
+}
+section.imagem > p {
+  background-color: rgba(0, 0, 0, 0.664);
+  width: 400px;
+}
+section#img01{
+  background: url('imagens/1.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+section#img02{
+  background-image: url('imagens/2.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+section#img03{
+  background-image: url('imagens/9.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+aside{
+  background-color: #1183f582;
+  font-family: var(--fontepadrao);
+  padding: 30px;
+}
+aside > h2{
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  width: 300px;
+  text-align: center;
+  color: #041E38;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.719);
+}
+aside > a{
+  color: white;
+  text-decoration: none;
+  padding: 1%;
+  font-weight: bold;
+  transition-duration: 0.5s;
+  font-family: var(--fontepadrao);
+  font-size: 20px;
+}
+aside >  a:hover {
+  background-color: #3a8ac7 ;
+  color:#041E38;
+  border-radius: 5px;
+}
+footer {
+  width: auto;
+  height: auto;
+  background-color: white;
+  max-width:903px;
+  display: block;
+  margin: auto;
+}
+img.footer{
+  max-width:903px;
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+}
